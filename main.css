@@ -31,6 +31,7 @@ input[type="checkbox"]
     opacity: 0;
 
 }
+
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -39,7 +40,12 @@ input[type="checkbox"]
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    min-height: 100vh;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 0.3s;
 }
 #sidbear.active
 {
