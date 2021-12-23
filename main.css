@@ -142,7 +142,10 @@ p {
 }
 /*Projects*/
 #projects {
-margin-left: 330px;
+margin-left: 480px;
+}
+#flexcard {
+    transform: translatex(10px);
 }
 /*Contact Me*/
 .container {
