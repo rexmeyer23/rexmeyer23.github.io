@@ -4,7 +4,10 @@ body {
     font-family: consolas;
     overflow-x: hidden;
     height: 100vh;
-    background: radial-gradient(#3940a2,#233963);
+    background: url('assets/AdobeStock_428158150_Preview.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
   
     -webkit-animation: fadeIn 1 1s ease-out;
     -moz-animation: fadeIn 1 1s ease-out;
@@ -21,6 +24,37 @@ body {
     margin-left: 150px;
     top: 30px;
 }
+h1 {
+    font-family: "Yellowtail", sans-serif;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+}
+h2 {
+    font-family: cursive;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+}
+/* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px red,
+        0 0 80px red,
+        0 0 90px red,
+        0 0 100px red,
+        0 0 150px red;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
 
 /*Sidebar Menu*/
 input[type="checkbox"]
@@ -130,12 +164,20 @@ ul li a:hover
     transform: translatex(10px);
     color: rgb(0, 162, 255);
 }
+#sidebar.logos
+{
 
+ max-width: .5px;
+ max-height: .5px;
+}
 
 /*About Me*/
 p {
     margin-top: 0;
     margin-bottom: 4rem;
+}
+#abouttext{
+    text-align: left;
 }
 #about {
     margin-left: 400px;
