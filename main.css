@@ -25,7 +25,7 @@ body {
     top: 30px;
 }
 h1 {
-    font-family: "Yellowtail", sans-serif;
+    font-family: Arial, Helvetica, cursive;
     animation: flicker 1.5s infinite alternate;
     color: #fff;
 }
@@ -68,6 +68,26 @@ input[type="checkbox"]
     opacity: 0;
 
 }
+@keyframes flickerGreen {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(42, 145, 52),
+        0 0 80px rgb(42, 145, 52),
+        0 0 90px rgb(42, 145, 52),
+        0 0 100px rgb(42, 145, 52),
+        0 0 150px rgb(42, 145, 52);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
 
 .wrapper {
     display: flex;
@@ -91,31 +111,8 @@ input[type="checkbox"]
     margin-left: -250px;
 }
 }
-.icon
-{
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    width: 50px;
-    height: 50px;
-    z-index: 100001;
-    background: #000;
-    pointer-events: none;
-}
-.icon:before 
-{
-    content: 'close';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
+
+
 input[type="checkbox"]:checked ~ .icon:before
 {
     content: 'menu';
@@ -129,10 +126,12 @@ ul{
     box-sizing: border-box;
     width: 300px;
     height: 100vh;
-    background: #000;
+    background-image: url(assets/brickwallSidebarRotated.jpg);
+    background-size: cover;
     transition: 0.5s;
     z-index: 100000;
     overflow-y: auto;
+    font-family: cursive;
 }
 input[type="checkbox"]:checked ~ ul
 {
@@ -162,7 +161,8 @@ font-size: 15px;
 ul li a:hover
 {
     transform: translatex(10px);
-    color: rgb(0, 162, 255);
+    color: rgb(198, 254, 203);
+    animation: flickerGreen 1.5s infinite alternate;
 }
 #sidebar.logos
 {
@@ -178,6 +178,8 @@ p {
 }
 #abouttext{
     text-align: left;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
 }
 #about {
     margin-left: 400px;
@@ -196,7 +198,7 @@ margin-left: 480px;
 }
 #contact {
     border-radius: 5px;
-    background-color: #29c3df;
+    background-color: rgb(29, 194, 226);
     padding: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -204,7 +206,30 @@ margin-left: 480px;
     padding-left: 20px;
     width: 50%;
     left: 200px;
+    animation: flickerBlue 1.5s infinite alternate;
+   
 }
+@keyframes flickerBlue {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        box-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 10px rgb(29, 194, 226),
+        0 0 30px rgb(29, 194, 226),
+        0 0 40px rgb(29, 194, 226),
+        0 0 50px rgb(29, 194, 226),
+        0 0 100px rgb(29, 194, 226);
+    
+    }
+    
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
+  }
+
 .formname {
     display: flex;
     flex-grow: 1;
