@@ -17,13 +17,12 @@ body {
 /*Header*/
 .container{
     position: relative;
-    left: -60px;
-    top: 200px;
+    
+    top: 150px;
 }
-#header{
-    margin-left: 150px;
-    top: 30px;
-}
+/* #header{
+   
+} */
 h1 {
     font-family: Arial, Helvetica, cursive;
     animation: flicker 1.5s infinite alternate;
@@ -57,20 +56,12 @@ h2 {
   }
 
 /*Sidebar Menu*/
-input[type="checkbox"]
-{
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    opacity: 0;
 
-}
-@keyframes flickerGreen {
+@keyframes flickerGreen 
+{
     
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% 
+    {
   
         text-shadow:
         0 0 4px #fff,
@@ -84,62 +75,10 @@ input[type="checkbox"]
     
     }
     
-    20%, 24%, 55% {        
+    20%, 24%, 55% 
+    {        
         text-shadow: none;
     }    
-  }
-
-.wrapper {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    
-}
-@media (max-width: 768px) {
-#sidebar {
-    position: relative;
-    min-width: 250px;
-    max-width: 250px;
-    height: 100vh;
-    float:left;
-    top: 0;
-    left: 0;
-    transition: all 0.3s;
-}
-#sidbear.active
-{
-    margin-left: -250px;
-}
-}
-
-
-input[type="checkbox"]:checked ~ .icon:before
-{
-    content: 'menu';
-}
-ul{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 50px 20px;
-    box-sizing: border-box;
-    width: 300px;
-    height: 100vh;
-    background-image: url(assets/brickwallSidebarRotated.jpg);
-    background-size: cover;
-    transition: 0.5s;
-    z-index: 100000;
-    overflow-y: auto;
-    font-family: cursive;
-}
-input[type="checkbox"]:checked ~ ul
-{
-    left: -300px;
-}
-ul li 
-{
-    list-style: none;
 }
 ul li a
 {
@@ -164,12 +103,12 @@ ul li a:hover
     color: rgb(198, 254, 203);
     animation: flickerGreen 1.5s infinite alternate;
 }
-#sidebar.logos
+/* #sidebar.logos
 {
 
  max-width: .5px;
  max-height: .5px;
-}
+} */  */
 
 /*About Me*/
 p {
@@ -181,15 +120,17 @@ p {
     font-weight: bold;
     text-shadow: 2px 2px black;
 }
-#about {
-    margin-left: 400px;
-}
+/* #about {
+    
+} */
 /*Projects*/
-#projects {
-margin-left: 480px;
-}
+/* #projects {
+
+} */
 #flexcard {
     transform: translatex(10px);
+    display: flex;
+    width: 348px;
 }
 /*Contact Me*/
 .container {
@@ -205,7 +146,7 @@ margin-left: 480px;
     padding-bottom: 20px;
     padding-left: 20px;
     width: 50%;
-    left: 200px;
+   
     animation: flickerBlue 1.5s infinite alternate;
    
 }
