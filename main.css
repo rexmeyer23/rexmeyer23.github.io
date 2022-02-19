@@ -176,7 +176,7 @@ p {
     padding-left: 20px;
     width: 50%;
    
-    animation: flickerBlue 1.5s infinite alternate;
+    /* animation: flickerBlue 1.5s infinite alternate; */
    
 }
 @keyframes flickerBlue {
