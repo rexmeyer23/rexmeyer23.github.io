@@ -104,6 +104,11 @@ ul li a:hover
     animation: flickerGreen 1.5s infinite alternate;
 }
 /*About Me*/
+.profilePic{
+    display: block;
+    max-width: 85%;
+    height: auto;
+}
 p {
     margin-top: 0;
     margin-bottom: 4rem;
@@ -113,9 +118,7 @@ p {
     font-weight: bold;
     text-shadow: 2px 2px black;
 }
-/* #about {
-    
-} */
+
 /*Projects*/
 /* #projects {
 
@@ -123,8 +126,41 @@ p {
 #flexcard {
     transform: translatex(10px);
     display: flex;
-    width: 348px;
+    width: 100px;
 }
+#flexcard:hover{
+    border-radius: 5px;
+    background-color: rgb(240, 47, 56);
+    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 50%;
+   
+    animation: flickerRed 1.5s infinite alternate;
+
+}
+@keyframes flickerRed {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        box-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 10px rgb(240, 47, 56),
+        0 0 30px rgb(240, 47, 56),
+        0 0 40px rgb(240, 47, 56),
+        0 0 50px rgb(240, 47, 56),
+        0 0 100px rgb(240, 47, 56);
+    
+    }
+    
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
+  }
 /*Contact Me*/
 .container {
   max-width: 200px;
