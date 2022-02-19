@@ -4,7 +4,7 @@ body {
     font-family: consolas;
     overflow-x: hidden;
     height: 100vh;
-    background: url('assets/AdobeStock_428158150_Preview.jpeg');
+    background: url('assets/brickwallSidebar.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -29,7 +29,7 @@ h1 {
     color: #fff;
 }
 h2 {
-    font-family: cursive;
+    font-family: Arial, Helvetica, cursive;
     animation: flicker 1.5s infinite alternate;
     color: #fff;
 }
@@ -95,7 +95,7 @@ ul li p
 {
 text-align: center;
 color: white;
-font-size: 15px;
+font-size: 20px;
 }
 ul li a:hover
 {
@@ -103,13 +103,6 @@ ul li a:hover
     color: rgb(198, 254, 203);
     animation: flickerGreen 1.5s infinite alternate;
 }
-/* #sidebar.logos
-{
-
- max-width: .5px;
- max-height: .5px;
-} */  */
-
 /*About Me*/
 p {
     margin-top: 0;
